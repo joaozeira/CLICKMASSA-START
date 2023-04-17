@@ -1,0 +1,377 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ROOT */
+:root {
+  --header-height: 7rem;
+
+  /* COLOR */
+  --body-color: #f2f2f2;
+  --blue: #2d5286;
+  --light-blue: #3fb4e7;
+
+  font-size: 62.5%;
+  /* 1rem = 10px */
+
+  /* DESKTOP MOBILE */
+  --title-font: 3.6rem;
+  --subtitle-font: 2.6rem;
+  --subtitle-font-card: 2rem;
+  --paragraph-font: 1.6rem;
+
+  /* DESKTOP FONTS */
+  --title-fontD: 8rem;
+  --subtitle-fontD: 5.4rem;
+  --paragraph-fontD: 3.2rem;
+
+  /* MARGIN */
+  --margin-title: 2rem;
+  --margin-section: 10rem;
+
+  /* BORDER-RADIUS */
+  --radius: 2rem;
+}
+
+/* BASE */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--body-color);
+  font-family: "Poppins", sans-serif;
+}
+
+/* TITLE HOME */
+.titleHome h1 {
+  font-size: var(--title-font);
+  color: var(--blue);
+  font-weight: 700;
+  margin-bottom: var(--margin-title);
+}
+
+.titleHome p {
+  font-size: var(--paragraph-font);
+  color: var(--blue);
+  font-weight: 400;
+  margin-bottom: var(--margin-title);
+}
+
+/* TITLE */
+.title h1 {
+  font-size: var(--subtitle-font);
+  color: var(--blue);
+  font-weight: 700;
+  margin-bottom: var(--margin-title);
+}
+
+.title p {
+  font-size: var(--paragraph-font);
+  color: var(--blue);
+  font-weight: 400;
+  margin-bottom: var(--margin-title);
+}
+
+/* BUTTON */
+.button {
+  height: 4rem;
+  width: 15rem;
+
+  background-color: var(--blue);
+  color: var(--body-color);
+
+  text-transform: uppercase;
+
+  border: none;
+
+  text-align: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: .5rem;
+}
+
+/* LAYOUT */
+.wrapper {
+  width: min(45rem, 100%);
+
+  margin-left: 1.5rem;
+  margin-inline: auto;
+
+  padding-inline: 1.5rem;
+}
+
+.section {
+  padding: calc(0.5rem + var(--header-height)) 0;
+}
+
+/* HEADER */
+#header {
+  height: 7rem;
+  width: 100%;
+  background: var(--body-color);
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+#header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  height: 100%;
+  width: 100%;
+}
+
+#header .img img {
+  width: 15rem;
+}
+
+/* HOME */
+#home {
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: var(--margin-section);
+}
+
+#home .container {
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#home .container .titleHome {
+  text-align: center;
+}
+
+/* VSL */
+#vsl .info .video {
+  background-color: red;
+  height: 20rem;
+  width: 100%;
+  margin-bottom: var(--margin-title);
+}
+
+/* EMPRESAS */
+#empresas .title p {
+  text-align: center;
+  font-size: var(--subtitle-font);
+}
+
+#empresas .cards-img {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+}
+
+#empresas .cards-img .img {
+  background-color: red;
+  height: 10rem;
+  width: 10rem;
+}
+
+/* COMO FUNCIONAR (how) */
+#how .cards-how {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+}
+
+#how .cards-how .card {
+  height: 25rem;
+  max-width: 30rem;
+
+  display: flex;
+  flex-direction: column;
+
+  background-color: #ffffff;
+
+  padding: 3rem;
+  border-radius: var(--radius);
+  border-bottom: .3rem solid #2d5286;
+}
+
+#how .cards-how .card .img {
+  height: 10rem;
+  width: 100%;
+  background-color: red;
+}
+
+#how .cards-how .card .title h1 {
+  margin-bottom: 1rem;
+  font-size: var(--subtitle-font-card);
+}
+
+#how .cards-how .card .title p {
+  margin-bottom: 1rem;
+}
+
+/* RECURSOS */
+#recursos .cards-recursos {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+#recursos .cards-recursos .card {
+  height: 15rem;
+  width: 15rem;
+
+  background-color: #ffffff;
+  border-bottom: .4rem solid #2d5286;
+  border-radius: var(--radius);
+  padding: 2rem;
+}
+
+#recursos .cards-recursos .card .img {
+  height: 5rem;
+  width: 100%;
+}
+
+/* MAIS RECURSOS */
+#mais-recursos .nav-recursos {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 2rem;
+  margin-bottom: var(--margin-title);
+}
+
+#mais-recursos .nav-recursos .card-recursos {
+  height: 10rem;
+  width: 10rem;
+
+  border-top: 1rem solid #E6E6E6;
+  padding: 1rem;
+}
+
+#mais-recursos .nav-recursos .card-recursos .title {
+  text-align: center;
+}
+
+#mais-recursos .nav-recursos .card-recursos .title .card-h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#mais-recursos .nav-recursos .card-recursos .title h1 {
+  width: 5rem;
+  margin-bottom: 1rem;
+  background-color: #E6E6E6;
+  color: #A5A5A5;
+  border-radius: 1rem;
+}
+
+#mais-recursos .nav-recursos .card-recursos .title p {
+  margin-bottom: 1rem;
+  color: #A5A5A5;
+}
+
+/* ACTIVE */
+#mais-recursos .nav-recursos .card-recursos.active {
+  border-top: 1rem solid #2d5286;
+}
+
+#mais-recursos .nav-recursos .card-recursos.active .title h1 {
+  width: 5rem;
+  margin-bottom: 1rem;
+  background-color: hsla(215, 50%, 35%, 0.20);
+  color: #2d5286;
+  border-radius: 1rem;
+}
+
+#mais-recursos .nav-recursos .card-recursos.active .title p {
+  margin-bottom: 1rem;
+  color: #2d5286;
+}
+
+#mais-recursos .celular {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#mais-recursos .celular .img {
+  height: 50rem;
+  width: 30rem;
+
+  background-color: red;
+  border-radius: 3rem;
+}
+
+/* TELAS DO SISTEMA */
+#telas {
+  background-color: var(--blue);
+}
+
+#telas h1 {
+  font-size: var(--title-font);
+  color: var(--body-color);
+  text-align: center;
+}
+
+/* PLANOS */
+#planos .cards-planos-mensal{
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+}
+
+#planos .cards-planos-mensal .card{
+  width: 30rem;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: var(--radius);
+
+  text-align: center;
+}
+
+#planos .cards-planos-mensal .card h1{
+  background-color: hsla(215, 50%, 35%, 0.20);
+  color: #2d5286;
+  text-align: center;
+  border-radius: 1rem;
+
+}
+#planos .cards-planos-mensal .card h2{
+  font-size: 3rem;
+  color: #2d5286;
+  text-align: center;
+  border-radius: 1rem;
+  margin-bottom: var(--margin-title);
+}
+
+#planos .cards-planos-mensal .card h2 span{
+  color: #A5A5A5;
+  font-size: 1.5rem;
+}
