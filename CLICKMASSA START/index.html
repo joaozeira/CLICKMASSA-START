@@ -7,6 +7,12 @@
     <title>CLickmassa Start</title>
 
     <!-- LINKS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
     <!-- SLICK -->
     <link
       rel="stylesheet"
@@ -21,6 +27,7 @@
       type="text/css"
       href="slick-1.8.1/slick/slick-theme.css"
     />
+
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -33,7 +40,13 @@
             <img src="assets/icons/logo.png" />
             <img src="assets/icons/logo-white.png" />
           </div>
-          <a href="#" class="button"> Comprar agora </a>
+          <a
+            target="_blank"
+            href="https://start.clickmassa.com.br/cadastro.php"
+            class="button"
+          >
+            Inscreva-se
+          </a>
         </nav>
       </div>
     </header>
@@ -42,10 +55,12 @@
       <div class="wrapper">
         <div class="container">
           <div class="titleHome">
-            <h1>ENVIE MAIS DE 5MIL MENSAGENS DE WHATSAPP sem bloqueio!</h1>
+            <h1>PARE DE FAZER LISTAS DE TRANSMISSÃO AGORA!</h1>
             <p>
-              Agora você pode automatizar seu marketing, geração de lead,
-              atendimento e muito mais com um robô.
+              Não fique catando seus contatos para enviar lista de transmissão!
+              Aumente suas vendas enviando a propaganda certa
+              <strong>em apenas 3 passos.</strong> Descubra como simplificar sua
+              estratégia de marketing agora mesmo!
             </p>
           </div>
           <a href="#" class="button">Comprar Agora</a>
@@ -56,38 +71,28 @@
     <section class="section" id="vsl">
       <div class="wrapper">
         <div class="title">
-          <h1>Conheça o clickmassa</h1>
-          <p>O que exatamente um robô pode fazer pelo seu negócio?</p>
+          <h1>Assista Uma Demonstração:</h1>
+          <p>
+            É possível criar <strong>em apenas 3 passos</strong> envios
+            personalizados para você esquecer a lista de transmissão.
+          </p>
         </div>
         <div class="info">
           <div class="video"></div>
           <div class="title">
             <h1>
-              botconversa é um construtor de robôs para empresários que não são
-              cientistas do
+              Clickmassa é uma ferramenta de envios ilimitados para
+              empreendedores que desejam vender mais.
             </h1>
             <p>
-              sim, o botconversa foi criado para que empresários como você, que
-              não é um programador e que não sabe como criar códigos, consiga
-              facilmente criar conversas inteligentes
+              Com a plataforma, é possível criar campanhas de whatsapp
+              marketing,notificações inteligentes, além de oferecer recursos
+              avançados de segmentação e personalização de leads para aumentar a
+              eficiência das campanhas. É uma solução completa e acessível para
+              empreendedores que desejam otimizar seus resultados e aumentar sua
+              base de clientes.
             </p>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="empresas">
-      <div class="wrapper">
-        <div class="title">
-          <p>Empresas que já fecham o triplo de vendas com o Clickmassa</p>
-        </div>
-        <div class="cards-img">
-          <div class="img"></div>
-          <div class="img"></div>
-          <div class="img"></div>
-          <div class="img"></div>
-          <div class="img"></div>
-          <div class="img"></div>
         </div>
       </div>
     </section>
@@ -326,26 +331,42 @@
         </div>
 
         <div class="content-recursos">
-          <div class="card">
-            <div class="img">1</div>
+          <div class="card" id="cont-gatilho">
+            <div class="img">
+              <img src="assets/img/gatilho.png" alt="">
+            </div>
           </div>
-          <div class="card">
+          <div class="card" id="cont-chamada">
             <div class="img">2</div>
           </div>
-          <div class="card">
+          <div class="card" id="cont-interacao">
             <div class="img">3</div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section" id="telas">
+    <section class="section" id="demonstracao">
       <div class="wrapper">
-        <h1>Telas do Sistema</h1>
-        <div class="telas">
-          <div class="img"></div>
-          <div class="img"></div>
-          <div class="img"></div>
+        <div class="title">
+          <h1>Assista Uma Demonstração:</h1>
+          <p>
+            É possível criar <strong>em apenas 3 passos</strong> envios
+            personalizados para você esquecer a lista de transmissão.
+          </p>
+        </div>
+        <div class="info">
+          <div class="video">
+            <iframe
+              width="360"
+              height="240"
+              src="https://www.youtube.com/embed/yYWFo4zEMRE"
+              title="ClickMassa Start   OVERVIEW"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
         </div>
       </div>
     </section>
@@ -356,107 +377,552 @@
           <h1>Escolha um plano Clickmassa que é certo para você</h1>
         </div>
 
-        <div class="nav-planos">
-          <div class="nav-card active" id="mensal"><p>Mensal</p></div>
-          <div class="nav-card" id="semestral"><p>semestral</p></div>
-          <div class="nav-card" id="anual"><p>anual</p></div>
-        </div>
-
         <div class="content-planos">
-          <!-- MENSAL -->
-          <div class="cards-planos">
-            <!-- 1 CONEXÃO -->
-            <div class="card">
+          <div class="cards-planos" id="cards-mensal">
+            <!-- ANUAL -->
+            <div class="card" id="anual">
               <div class="title">
-                <h1>1 conexão</h1>
-                <h2>R$ 99,00 <span>/Mês</span></h2>
-                <p>
-                  Todas as funcionalidades que um pequeno/médio precisa para
-                  automatizar o atendimento e vendas do WhatsApp
-                </p>
-                <p>
-                  Entregue as respostas que seusEntregue as respostas que seus
-                </p>
+                <h1>ANUAL</h1>
+
+                <ul class="info">
+                  <li>
+                    <svg
+                      width="16"
+                      height="16"
+                      fill="none"
+                      stroke="#2d5286"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                      <path d="M22 4 12 14.01l-3-3"></path>
+                    </svg>
+                    1 Conexão
+                  </li>
+                  <li>
+                    <svg
+                      width="16"
+                      height="16"
+                      fill="none"
+                      stroke="#2d5286"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                      <path d="M22 4 12 14.01l-3-3"></path>
+                    </svg>
+                    Envios ilimitado
+                  </li>
+                  <li>
+                    <svg
+                      width="16"
+                      height="16"
+                      fill="none"
+                      stroke="#2d5286"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                      <path d="M22 4 12 14.01l-3-3"></path>
+                    </svg>
+                    Gatilhos de respostas
+                  </li>
+                  <li>
+                    <svg
+                      width="16"
+                      height="16"
+                      fill="none"
+                      stroke="#2d5286"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                      <path d="M22 4 12 14.01l-3-3"></path>
+                    </svg>
+                    Dashboard personalizado
+                  </li>
+                  <li>
+                    <svg
+                      width="16"
+                      height="16"
+                      fill="none"
+                      stroke="#2d5286"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                      <path d="M22 4 12 14.01l-3-3"></path>
+                    </svg>
+                    API Integrada
+                  </li>
+                  <li>
+                    <svg
+                      width="16"
+                      height="16"
+                      fill="none"
+                      stroke="#2d5286"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                      <path d="M22 4 12 14.01l-3-3"></path>
+                    </svg>
+                    Acessp a automações
+                  </li>
+                  <li>
+                    <svg
+                      width="16"
+                      height="16"
+                      fill="none"
+                      stroke="#2d5286"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                      <path d="M22 4 12 14.01l-3-3"></path>
+                    </svg>
+                    Tags personalizadas
+                  </li>
+                  <li>
+                    <svg
+                      width="16"
+                      height="16"
+                      fill="none"
+                      stroke="#2d5286"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                      <path d="M22 4 12 14.01l-3-3"></path>
+                    </svg>
+                    Relatorio personalizados
+                  </li>
+                  <li>
+                    <svg
+                      width="16"
+                      height="16"
+                      fill="none"
+                      stroke="#2d5286"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                      <path d="M22 4 12 14.01l-3-3"></path>
+                    </svg>
+                    Automação de chamada
+                  </li>
+                </ul>
+
+                <div class="valores">
+                  <div>
+                    <h3>De: R$ 99/mês</h3>
+                  </div>
+                  <div class="promo">
+                    <p>R$</p>
+                    <h2>49</h2>
+                    <h4>/mês</h4>
+                  </div>
+                </div>
+
+                <div class="line"></div>
+
+                <h3>Pagamento anual - Total R$ 588</h3>
               </div>
-              <a href="#" class="button"> Comprar Agora </a>
+              <a href="#" class="button"> Escolher </a>
             </div>
-            <!-- PERSONALIZADO -->
+            <!-- SEMESTRAL -->
             <div class="card">
               <div class="title">
-                <h1>PERSONALIZADO</h1>
-                <p>
-                  Todas as funcionalidades que um pequeno/médio precisa para
-                  automatizar o atendimento e vendas do WhatsApp
-                </p>
-                <p>
-                  Entregue as respostas que seusEntregue as respostas que seus
-                </p>
+                <h1>SEMESTRAL</h1>
+
+                <ul class="info">
+                  <li>
+                    <svg
+                      width="16"
+                      height="16"
+                      fill="none"
+                      stroke="#2d5286"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                      <path d="M22 4 12 14.01l-3-3"></path>
+                    </svg>
+                    1 Conexão
+                  </li>
+                  <li>
+                    <svg
+                      width="16"
+                      height="16"
+                      fill="none"
+                      stroke="#2d5286"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                      <path d="M22 4 12 14.01l-3-3"></path>
+                    </svg>
+                    Envios ilimitado
+                  </li>
+                  <li>
+                    <svg
+                      width="16"
+                      height="16"
+                      fill="none"
+                      stroke="#2d5286"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                      <path d="M22 4 12 14.01l-3-3"></path>
+                    </svg>
+                    Gatilhos de respostas
+                  </li>
+                  <li>
+                    <svg
+                      width="16"
+                      height="16"
+                      fill="none"
+                      stroke="#2d5286"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                      <path d="M22 4 12 14.01l-3-3"></path>
+                    </svg>
+                    Dashboard personalizado
+                  </li>
+                  <li>
+                    <svg
+                      width="16"
+                      height="16"
+                      fill="none"
+                      stroke="#2d5286"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                      <path d="M22 4 12 14.01l-3-3"></path>
+                    </svg>
+                    API Integrada
+                  </li>
+                  <li>
+                    <svg
+                      width="16"
+                      height="16"
+                      fill="none"
+                      stroke="#2d5286"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                      <path d="M22 4 12 14.01l-3-3"></path>
+                    </svg>
+                    Acessp a automações
+                  </li>
+                  <li>
+                    <svg
+                      width="16"
+                      height="16"
+                      fill="none"
+                      stroke="#2d5286"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                      <path d="M22 4 12 14.01l-3-3"></path>
+                    </svg>
+                    Tags personalizadas
+                  </li>
+                  <li>
+                    <svg
+                      width="16"
+                      height="16"
+                      fill="none"
+                      stroke="#2d5286"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                      <path d="M22 4 12 14.01l-3-3"></path>
+                    </svg>
+                    Relatorio personalizados
+                  </li>
+                  <li>
+                    <svg
+                      width="16"
+                      height="16"
+                      fill="none"
+                      stroke="#2d5286"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                      <path d="M22 4 12 14.01l-3-3"></path>
+                    </svg>
+                    Automação de chamada
+                  </li>
+                </ul>
+
+                <div class="valores">
+                  <div>
+                    <h3>De: R$ 99/mês</h3>
+                  </div>
+                  <div class="promo">
+                    <p>R$</p>
+                    <h2>59</h2>
+                    <h4>/mês</h4>
+                  </div>
+                </div>
+
+                <div class="line"></div>
+
+                <h3>Pagamento semestral - Total R$ 354</h3>
               </div>
-              <a href="#" class="button"> Comprar Agora </a>
+              <a href="#" class="button"> Escolher </a>
+            </div>
+            <!-- MENSAL -->
+            <div class="card">
+              <div class="title">
+                <h1>MENSAL</h1>
+
+                <ul class="info">
+                  <li>
+                    <svg
+                      width="16"
+                      height="16"
+                      fill="none"
+                      stroke="#2d5286"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                      <path d="M22 4 12 14.01l-3-3"></path>
+                    </svg>
+                    1 Conexão
+                  </li>
+                  <li>
+                    <svg
+                      width="16"
+                      height="16"
+                      fill="none"
+                      stroke="#2d5286"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                      <path d="M22 4 12 14.01l-3-3"></path>
+                    </svg>
+                    Envios ilimitado
+                  </li>
+                  <li>
+                    <svg
+                      width="16"
+                      height="16"
+                      fill="none"
+                      stroke="#2d5286"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                      <path d="M22 4 12 14.01l-3-3"></path>
+                    </svg>
+                    Gatilhos de respostas
+                  </li>
+                  <li>
+                    <svg
+                      width="16"
+                      height="16"
+                      fill="none"
+                      stroke="#2d5286"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                      <path d="M22 4 12 14.01l-3-3"></path>
+                    </svg>
+                    Dashboard personalizado
+                  </li>
+                  <li>
+                    <svg
+                      width="16"
+                      height="16"
+                      fill="none"
+                      stroke="#2d5286"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                      <path d="M22 4 12 14.01l-3-3"></path>
+                    </svg>
+                    API Integrada
+                  </li>
+                  <li>
+                    <svg
+                      width="16"
+                      height="16"
+                      fill="none"
+                      stroke="#2d5286"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                      <path d="M22 4 12 14.01l-3-3"></path>
+                    </svg>
+                    Acessp a automações
+                  </li>
+                  <li>
+                    <svg
+                      width="16"
+                      height="16"
+                      fill="none"
+                      stroke="#2d5286"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                      <path d="M22 4 12 14.01l-3-3"></path>
+                    </svg>
+                    Tags personalizadas
+                  </li>
+                  <li>
+                    <svg
+                      width="16"
+                      height="16"
+                      fill="none"
+                      stroke="#2d5286"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                      <path d="M22 4 12 14.01l-3-3"></path>
+                    </svg>
+                    Relatorio personalizados
+                  </li>
+                  <li>
+                    <svg
+                      width="16"
+                      height="16"
+                      fill="none"
+                      stroke="#2d5286"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                      <path d="M22 4 12 14.01l-3-3"></path>
+                    </svg>
+                    Automação de chamada
+                  </li>
+                </ul>
+
+                <div class="valores">
+                  <div class="promo">
+                    <p>R$</p>
+                    <h2>99</h2>
+                    <h4>/mês</h4>
+                  </div>
+                </div>
+              </div>
+              <a href="#" class="button"> Escolher </a>
             </div>
           </div>
-          <!-- SEMESTRAL -->
-          <div class="cards-planos">
-            <!-- 1 CONEXÃO -->
-            <div class="card">
-              <div class="title">
-                <h1>2 conexão</h1>
-                <h2>R$ 99,00 <span>/Mês</span></h2>
-                <p>
-                  Todas as funcionalidades que um pequeno/médio precisa para
-                  automatizar o atendimento e vendas do WhatsApp
-                </p>
-                <p>
-                  Entregue as respostas que seusEntregue as respostas que seus
-                </p>
-              </div>
-              <a href="#" class="button"> Comprar Agora </a>
-            </div>
+
+          <div class="personalizados">
             <!-- PERSONALIZADO -->
-            <div class="card">
+            <div class="card" id="personalizado">
               <div class="title">
-                <h1>PERSONALIZADO</h1>
-                <p>
-                  Todas as funcionalidades que um pequeno/médio precisa para
-                  automatizar o atendimento e vendas do WhatsApp
-                </p>
-                <p>
-                  Entregue as respostas que seusEntregue as respostas que seus
-                </p>
+                <h1>AGÊNCIAS</h1>
               </div>
-              <a href="#" class="button"> Comprar Agora </a>
-            </div>
-          </div>
-          <!-- ANUAL -->
-          <div class="cards-planos">
-            <!-- 1 CONEXÃO -->
-            <div class="card">
-              <div class="title">
-                <h1>3 conexão</h1>
-                <h2>R$ 99,00 <span>/Mês</span></h2>
-                <p>
-                  Todas as funcionalidades que um pequeno/médio precisa para
-                  automatizar o atendimento e vendas do WhatsApp
-                </p>
-                <p>
-                  Entregue as respostas que seusEntregue as respostas que seus
-                </p>
+              <div class="info">
+                <div class="img">
+                  <img src="assets/ilustation.svg" />
+                </div>
+                <div class="info2">
+                  <p>QUER SE TORNAR UM PARCEIRO CLICKMASSA?</p>
+                  <a href="#" class="button"> Quero me tornar um parceiro! </a>
+                </div>
               </div>
-              <a href="#" class="button"> Comprar Agora </a>
-            </div>
-            <!-- PERSONALIZADO -->
-            <div class="card">
-              <div class="title">
-                <h1>PERSONALIZADO</h1>
-                <p>
-                  Todas as funcionalidades que um pequeno/médio precisa para
-                  automatizar o atendimento e vendas do WhatsApp
-                </p>
-                <p>
-                  Entregue as respostas que seusEntregue as respostas que seus
-                </p>
-              </div>
-              <a href="#" class="button"> Comprar Agora </a>
             </div>
           </div>
         </div>
@@ -719,7 +1185,7 @@
       </div>
     </section>
 
-    <section class="section" id="footer">
+    <section id="footer">
       <div class="footer">
         <div class="wrapper">
           <div class="left">
@@ -829,6 +1295,7 @@
         </div>
       </div>
     </section>
+
     <!-- SCRIPTS -->
     <!-- JQUERY -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
