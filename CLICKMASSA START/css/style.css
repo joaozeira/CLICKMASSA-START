@@ -14,7 +14,7 @@ a {
 
   /* COLOR */
   --body-color: #f2f2f2;
-  --blue: #2d5286;
+  --blue: #093572;
   --light-blue: #3fb4e7;
 
   font-size: 62.5%;
@@ -66,11 +66,11 @@ body {
 
 /* TITLE */
 .title h1 {
-  font-size: var(--subtitle-font);
+  font-size: 4rem;
   color: var(--blue);
   font-weight: 700;
   margin-bottom: var(--margin-title);
-  line-height: 2.3rem;
+  line-height: 4rem;
 }
 
 .title p {
@@ -79,31 +79,32 @@ body {
   font-weight: 400;
   margin-bottom: var(--margin-title);
   line-height: 2.2rem;
+  
 }
 
 /* BUTTON */
 .button {
-  height: 5rem;
-  width: 17rem;
-
-  background-color: var(--blue);
-  color: var(--body-color);
+  box-shadow: inset 0px -3px 7px 0px #3dc21b;
+  background: linear-gradient(to bottom, #0dbf3d 5%, #5cbf2a 100%);
+  background-color: #0dbf3d;
+  border-radius: 3px;
+  border: 1px solid #18ab29;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 1.8rem;
   font-weight: 700;
-
-  text-transform: uppercase;
-
-  border: none;
-
-  text-align: center;
-  font-weight: 700;
-  font-size: 1.4rem;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #2f6627;
 
   display: flex;
   align-items: center;
   justify-content: center;
 
-  border-radius: 0.5rem;
-  border: 1px solid #ffffff;
+  height: 5rem;
+  width: 15rem;
+
+  text-transform: uppercase;
 }
 
 .button:hover {
@@ -218,6 +219,11 @@ header.scroll {
   text-align: center;
 }
 
+#home .container .button{
+  height: 6rem;
+  width: 80%;
+}
+
 /* VSL */
 #vsl .info .video {
   background-color: red;
@@ -227,6 +233,10 @@ header.scroll {
 }
 
 /* COMO FUNCIONAR (how) */
+#how .title{
+  text-align: center;
+}
+
 #how .cards-how {
   display: grid;
   place-items: center;
@@ -247,7 +257,7 @@ header.scroll {
   border-radius: var(--radius);
   border-bottom: 0.3rem solid #2d5286;
 }
-#how .cards-how .card:hover{
+#how .cards-how .card:hover {
   transform: scale(1.2);
 }
 
@@ -269,6 +279,18 @@ header.scroll {
 }
 
 /* RECURSOS */
+#recursos .title{
+  text-align: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#recursos .title h1{
+  width: 80%;
+}
+
 #recursos .cards-recursos {
   display: grid;
   place-items: center;
@@ -293,7 +315,7 @@ header.scroll {
   gap: 1rem;
 }
 
-#recursos .cards-recursos .card:hover{
+#recursos .cards-recursos .card:hover {
   transform: scale(1.1);
 }
 
@@ -311,6 +333,16 @@ header.scroll {
 }
 
 /* MAIS RECURSOS */
+
+#mais-recursos .side .title h1{
+  text-align: center;
+}
+
+#mais-recursos .side .title h1 span{
+  -webkit-animation: pulse 1s ease infinite;
+  animation: pulse 1s ease infinite;
+}
+
 #mais-recursos .nav-recursos {
   display: flex;
   align-items: center;
@@ -394,8 +426,7 @@ header.scroll {
 }
 
 #mais-recursos .card .img {
-  background-color: #ffffff;
-  height: 50rem;
+  height: 100%;
   width: 50rem;
 
   border-radius: 2rem 2rem 2rem 0;
@@ -470,19 +501,12 @@ header.scroll {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
 }
 
-#planos .personalizados {
-  margin-top: 3rem;
-  width: 100%;
-
-  display: flex;
-  justify-content: center;
-}
-#planos .card#anual {
+#planos .card#maisvendido {
   border: 1px solid #2d5286;
   position: relative;
 }
 
-#planos .card#anual::after {
+#planos .card#maisvendido::after {
   content: "Mais vendido";
   height: 2.5rem;
   width: 15rem;
@@ -548,15 +572,14 @@ header.scroll {
   font-weight: 700;
 }
 
-#planos .card .img {
+#planos .card#personalizado .img {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: var(--margin-title);
 }
-
-#planos .card .img img {
+#planos .card#personalizado .img img {
   width: 25rem;
 }
 
@@ -572,32 +595,6 @@ header.scroll {
   text-decoration: line-through;
   font-size: 1.6rem;
   margin-top: 2rem;
-}
-
-#planos .cards-planos .card .valores .promo {
-  display: flex;
-  font-weight: 700;
-  color: #2d5286;
-}
-
-#planos .cards-planos .card .valores .promo p {
-  display: flex;
-  align-items: start;
-  font-weight: 700;
-}
-
-#planos .cards-planos .card .valores .promo h2 {
-  font-size: 5rem;
-  font-weight: 700;
-}
-
-#planos .cards-planos .card .valores .promo h4 {
-  height: 100%;
-  display: flex;
-  align-items: end;
-  font-weight: 700;
-  margin-top: -0.8rem;
-  font-size: 1.4rem;
 }
 
 #planos .cards-planos .card .line {
@@ -891,9 +888,9 @@ header.scroll {
 
   /* BUTTON */
   .button {
-    height: 5rem;
-    width: 16rem;
-    font-size: 1.4rem;
+    height: 6rem;
+    width: 30rem;
+    font-size: 2.2rem;
   }
 
   /* HEADER */
@@ -954,19 +951,6 @@ header.scroll {
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
-
-  #planos .card#personalizado .img {
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 0;
-  }
-
-  #planos .card#personalizado .img img {
-    width: 35rem;
-    margin-bottom: var(--margin-title);
   }
 
   #planos .card#personalizado .info2 {
