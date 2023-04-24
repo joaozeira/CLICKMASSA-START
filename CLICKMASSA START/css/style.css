@@ -166,7 +166,7 @@ header.scroll {
 }
 
 #header .img img {
-  width: 15rem;
+  width: 18rem;
 }
 
 #header .button {
@@ -397,10 +397,13 @@ header.scroll {
 #mais-recursos .nav-recursos .card-recursos.active {
   border-top: 1rem solid #2d5286;
 }
+
 #mais-recursos .nav-recursos .card-recursos:hover {
   border-bottom: 1px solid#e6e6e6;
   border-left: 1px solid #e6e6e6;
   border-right: 1px solid #e6e6e6;
+
+  border-radius: 1rem ;
 
   transform: scale(1.2);
 }
@@ -797,6 +800,12 @@ header.scroll {
     line-height: 3rem;
   }
 
+  #home .container .button{
+    height: 6rem;
+    width: 50%;
+  }
+
+
   /* COMO FUNCIONAR (how) */
   #how .cards-how {
     grid-template-columns: repeat(3, 1fr);
@@ -888,8 +897,8 @@ header.scroll {
 
   /* BUTTON */
   .button {
-    height: 6rem;
-    width: 30rem;
+    height: 5rem;
+    width: 25rem;
     font-size: 2.2rem;
   }
 
@@ -946,22 +955,8 @@ header.scroll {
   #planos .card#personalizado {
     width: 100%;
   }
-  #planos .card#personalizado .info {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
 
-  #planos .card#personalizado .info2 {
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-
-  #planos .card#personalizado .info2 .button {
-    width: 70%;
+  #planos .card#personalizado .button {
+    font-size: 1.5rem;
   }
 }
