@@ -61,6 +61,5 @@ interacao.addEventListener("click", function active() {
   contGatilho.style.display = 'none';
   contChamada.style.display = 'none';
   contInteracao.style.display = 'flex';
-});
-
+}); 
 
