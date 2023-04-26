@@ -19,10 +19,6 @@ function changeHeaderWhenScroll() {
   }
 }
 
-/* When Scroll */
-window.addEventListener("scroll", function () {
-  changeHeaderWhenScroll();
-});
 
 /* NAV RECURSOS */
 const gatilho = document.querySelector("#gatilho");
@@ -62,4 +58,30 @@ interacao.addEventListener("click", function active() {
   contChamada.style.display = 'none';
   contInteracao.style.display = 'flex';
 }); 
+
+/* APARECER BACK-TO-TOP */
+var BackToTop = document.getElementById('backToTop');
+function ShowBackToTop(){
+  if (window.scrollY >= 700){
+    BackToTop.style.display="flex";
+  }
+  else{
+    BackToTop.style.display="none";
+  }
+}
+
+
+BackToTop.addEventListener("click", function() {
+  document.documentElement.scrollTop = 0;
+});
+
+
+/* When Scroll */
+window.addEventListener('scroll', function () {
+  changeHeaderWhenScroll(),
+  ShowBackToTop()
+})
+
+
+
 

@@ -37,6 +37,9 @@ a {
 
   /* BORDER-RADIUS */
   --radius: 2rem;
+
+  /* POPUP */
+  --duration-popup: 2s;
 }
 
 /* BASE */
@@ -79,7 +82,6 @@ body {
   font-weight: 400;
   margin-bottom: var(--margin-title);
   line-height: 2.2rem;
-  
 }
 
 /* BUTTON */
@@ -109,6 +111,96 @@ body {
 
 .button:hover {
   background-color: var(--light-blue);
+}
+
+.buttonWhatsapp {
+  width: 6rem;
+
+  position: fixed;
+  right: 5rem;
+  bottom: 5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.buttonWhatsapp .whatsapp {
+  box-shadow: inset 0px -3px 7px 0px #3dc21b;
+  background: linear-gradient(to bottom, #0dbf3d 5%, #5cbf2a 100%);
+  background-color: #0dbf3d;
+  border: 1px solid #18ab29;
+  cursor: pointer;
+
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttonWhatsapp .whatsapp:hover {
+  transform: scale(1.1);
+}
+
+.buttonWhatsapp .whatsapp::after {
+  content: "Alguma duvida?";
+  position: absolute;
+  background-color: red;
+  color: white;
+
+  width: 100%;
+
+  left: -6.5rem;
+  top: -3.2rem;
+
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+
+  border-radius: 1rem 1rem 0 1rem;
+
+  opacity: 0;
+  animation-name: fade-in;
+  animation-duration: 1s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.buttonWhatsapp .whatsapp svg,
+.buttonWhatsapp #backToTop svg {
+  margin-top: -0.2rem;
+}
+
+.buttonWhatsapp #backToTop {
+  display: none;
+  background-color: var(--blue);
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+}
+
+.buttonWhatsapp #backToTop:hover svg {
+  transform: rotate(-45deg);
+  transition: 0.5s;
 }
 
 /* LAYOUT */
@@ -196,14 +288,13 @@ header.scroll {
 
 /* HOME */
 #home {
-  height: 50vh;
+  height: 100vh;
   width: 100%;
 
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-top: var(--margin-section);
 }
 
 #home .container {
@@ -219,7 +310,7 @@ header.scroll {
   text-align: center;
 }
 
-#home .container .button{
+#home .container .button {
   height: 6rem;
   width: 80%;
 }
@@ -233,7 +324,7 @@ header.scroll {
 }
 
 /* COMO FUNCIONAR (how) */
-#how .title{
+#how .title {
   text-align: center;
 }
 
@@ -279,7 +370,7 @@ header.scroll {
 }
 
 /* RECURSOS */
-#recursos .title{
+#recursos .title {
   text-align: center;
 
   display: flex;
@@ -287,7 +378,7 @@ header.scroll {
   justify-content: center;
 }
 
-#recursos .title h1{
+#recursos .title h1 {
   width: 80%;
 }
 
@@ -334,11 +425,11 @@ header.scroll {
 
 /* MAIS RECURSOS */
 
-#mais-recursos .side .title h1{
+#mais-recursos .side .title h1 {
   text-align: center;
 }
 
-#mais-recursos .side .title h1 span{
+#mais-recursos .side .title h1 span {
   -webkit-animation: pulse 1s ease infinite;
   animation: pulse 1s ease infinite;
 }
@@ -403,7 +494,7 @@ header.scroll {
   border-left: 1px solid #e6e6e6;
   border-right: 1px solid #e6e6e6;
 
-  border-radius: 1rem ;
+  border-radius: 1rem;
 
   transform: scale(1.2);
 }
@@ -800,11 +891,10 @@ header.scroll {
     line-height: 3rem;
   }
 
-  #home .container .button{
+  #home .container .button {
     height: 6rem;
     width: 50%;
   }
-
 
   /* COMO FUNCIONAR (how) */
   #how .cards-how {
@@ -960,3 +1050,4 @@ header.scroll {
     font-size: 1.5rem;
   }
 }
+
