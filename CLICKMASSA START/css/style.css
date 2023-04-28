@@ -21,7 +21,7 @@ a {
   /* 1rem = 10px */
 
   /* DESKTOP MOBILE */
-  --title-font: 3.6rem;
+  --title-font: 4rem;
   --subtitle-font: 2.6rem;
   --subtitle-font-card: 2rem;
   --paragraph-font: 1.6rem;
@@ -49,7 +49,7 @@ html {
 
 body {
   background: var(--body-color);
-  font-family: "Lato", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 /* TITLE HOME */
@@ -58,6 +58,10 @@ body {
   color: var(--blue);
   font-weight: 700;
   margin-bottom: var(--margin-title);
+}
+
+.titleHome h1 span {
+  font-weight: 400;
 }
 
 .titleHome p {
@@ -69,7 +73,7 @@ body {
 
 /* TITLE */
 .title h1 {
-  font-size: 4rem;
+  font-size: 2.6rem;
   color: var(--blue);
   font-weight: 700;
   margin-bottom: var(--margin-title);
@@ -88,10 +92,9 @@ body {
 .button {
   box-shadow: inset 0px -3px 7px 0px #3dc21b;
   background: linear-gradient(to bottom, #0dbf3d 5%, #5cbf2a 100%);
-  background-color: #0dbf3d;
   border-radius: 3px;
   border: 1px solid #18ab29;
-  display: inline-block;
+
   cursor: pointer;
   color: #ffffff;
   font-size: 1.8rem;
@@ -110,7 +113,10 @@ body {
 }
 
 .button:hover {
-  background-color: var(--light-blue);
+  background: linear-gradient(to bottom, #5cbf2a 100%, #097a27 5%);
+  border: none;
+  text-shadow: none;
+  box-shadow: none;
 }
 
 .buttonWhatsapp {
@@ -153,10 +159,10 @@ body {
   background-color: red;
   color: white;
 
-  width: 100%;
+  width: 13rem;
 
-  left: -6.5rem;
-  top: -3.2rem;
+  left: -13.3rem;
+  top: -2.3rem;
 
   padding: 0.5rem 1rem;
   font-size: 1.5rem;
@@ -268,7 +274,6 @@ header.scroll {
 
 #header .button:hover {
   -webkit-animation: none;
-  background-color: var(--light-blue);
 }
 
 @-webkit-keyframes pulse {
@@ -318,7 +323,7 @@ header.scroll {
 /* VSL */
 #vsl .info .video {
   background-color: red;
-  height: 20rem;
+  height: 40rem;
   width: 100%;
   margin-bottom: var(--margin-title);
 }
@@ -349,7 +354,7 @@ header.scroll {
   border-bottom: 0.3rem solid #2d5286;
 }
 #how .cards-how .card:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 #how .cards-how .card .img {
@@ -481,7 +486,7 @@ header.scroll {
 #mais-recursos .nav-recursos .card-recursos .title p {
   margin-bottom: 1rem;
   color: #a5a5a5;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 /* ACTIVE */
@@ -642,6 +647,30 @@ header.scroll {
   margin-bottom: var(--margin-title);
 }
 
+#planos .card#personalizado .img {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--margin-title);
+}
+#planos .card#personalizado .img img {
+  width: 25rem;
+}
+
+#planos .card#personalizado .button {
+  height: 4.5rem;
+  width: 100%;
+  padding: 2rem;
+}
+
+#planos .card .valores {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: var(--margin-title);
+}
+
 #planos .card .title h1 {
   height: 5rem;
   width: 25rem;
@@ -666,24 +695,6 @@ header.scroll {
   font-weight: 700;
 }
 
-#planos .card#personalizado .img {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: var(--margin-title);
-}
-#planos .card#personalizado .img img {
-  width: 25rem;
-}
-
-#planos .card .valores {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  margin-bottom: var(--margin-title);
-}
-
 #planos .card .valores h3:nth-child(1) {
   color: #a5a5a5;
   text-decoration: line-through;
@@ -705,12 +716,6 @@ header.scroll {
 }
 
 #planos .cards-planos .card .button {
-  height: 4.5rem;
-  width: 100%;
-  padding: 2rem;
-}
-
-#planos .card#personalizado .info2 .button {
   height: 4.5rem;
   width: 100%;
   padding: 2rem;
@@ -872,11 +877,11 @@ header.scroll {
 
   /* TITLE HOME */
   .titleHome h1 {
-    font-size: 5rem;
+    font-size: 6.5rem;
   }
 
   .titleHome p {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     line-height: 3.2rem;
   }
 
@@ -967,16 +972,16 @@ header.scroll {
 
   /* TITLE HOME */
   .titleHome h1 {
-    font-size: 7rem;
+    font-size: 8rem;
   }
 
   .titleHome p {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
   }
 
   /* TITLE */
   .title h1 {
-    font-size: var(--subtitle-fontD);
+    font-size: 3.5rem;
     line-height: 4rem;
   }
 
@@ -1050,4 +1055,3 @@ header.scroll {
     font-size: 1.5rem;
   }
 }
-
