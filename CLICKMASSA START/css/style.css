@@ -39,7 +39,7 @@ a {
   --radius: 2rem;
 
   /* POPUP */
-  --duration-popup: 2s;
+  --duration-popup: 30s;
 }
 
 /* BASE */
@@ -123,8 +123,8 @@ body {
   width: 6rem;
 
   position: fixed;
-  right: 5rem;
-  bottom: 5rem;
+  right: 3rem;
+  bottom: 3rem;
 
   display: flex;
   align-items: center;
@@ -173,7 +173,7 @@ body {
   opacity: 0;
   animation-name: fade-in;
   animation-duration: 1s;
-  animation-delay: 2s;
+  animation-delay: var(--duration-popup);
   animation-fill-mode: forwards;
 }
 
@@ -236,15 +236,15 @@ body {
   align-items: center;
 }
 
-#header img:nth-child(2) {
+#header a:nth-child(2) {
   display: none;
 }
 
-#header.scroll img:nth-child(2) {
+#header.scroll a:nth-child(2) {
   display: flex;
 }
 
-header.scroll img:nth-child(1) {
+header.scroll a:nth-child(1) {
   display: none;
 }
 
@@ -321,8 +321,10 @@ header.scroll {
 }
 
 /* VSL */
+#vsl .title h1 span{
+  color: var(--light-blue);
+}
 #vsl .info .video {
-  background-color: red;
   height: 40rem;
   width: 100%;
   margin-bottom: var(--margin-title);
@@ -659,7 +661,7 @@ header.scroll {
 }
 
 #planos .card#personalizado .button {
-  height: 4.5rem;
+  height: 5rem;
   width: 100%;
   padding: 2rem;
 }
@@ -673,7 +675,7 @@ header.scroll {
 
 #planos .card .title h1 {
   height: 5rem;
-  width: 25rem;
+  width: 100%;
   background-color: hsla(215, 50%, 35%, 0.2);
   color: #2d5286;
   text-align: center;
@@ -864,6 +866,34 @@ header.scroll {
   color: var(--light-blue);
 }
 
+footer{
+  background-color: var(--body-color);
+  padding: 1rem 0 1rem 0;
+
+}
+
+footer .wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column-reverse;
+  color:var(--blue);
+
+  font-size: .7rem;
+}
+
+.desenvolvido{
+  display: flex;
+  align-items: center;
+
+  font-size: 1rem;
+}
+
+.desenvolvido img{
+  width: 13rem;
+  margin-left: 2rem;
+}
+
 /* 700 */
 @media (min-width: 700px) {
   .wrapper {
@@ -957,6 +987,10 @@ header.scroll {
 
   #footer .mid ul li:hover {
     color: var(--light-blue);
+  }
+
+  footer .wrapper{
+    flex-direction: row;
   }
 }
 
